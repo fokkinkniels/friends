@@ -8,7 +8,7 @@ Dit project heeft betrekking op mijn individueel project voor semester 3 bij de 
 - [Situaties](#situaties)
     - [Huidige situatie](#huidige-situatie)
     - [Het probleem](#het-probleem)
-    - [Gewenste situatie](#gewenste-situatie
+    - [Gewenste situatie](#gewenste-situatie)
 - [MoSCoW model](#moscow-model)
     - [Must](#must)
     - [Should](#should)

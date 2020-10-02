@@ -9,7 +9,7 @@ Dit project heeft betrekking op mijn individueel project voor semester 3 bij de 
     - [Huidige situatie](#huidige-situatie)
     - [Het probleem](#het-probleem)
     - [Gewenste situatie](#gewenste-situatie)
-- [MoSCoW methode](#MoSCoW methode)
+- [MoSCoW methode](#MoSCoW-methode)
     - [Must](#must)
     - [Should](#should)
     - [Could](#could)

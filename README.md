@@ -14,7 +14,6 @@ Dit project heeft betrekking op mijn individueel project voor semester 3 bij de 
     - [Should](#should)
     - [Could](#could)
 
-
 <br>
 
 # Inleiding

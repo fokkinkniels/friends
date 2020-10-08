@@ -69,6 +69,27 @@ In dit hoofdstuk staan de huidige requirements opgesteld in een MoSCoW model. De
 ## Functional requirements
 
 ### FR.001: De gebruiker moet in kunnen loggen
-- K0.01 Wanneer de gebruiker een verkeerde gebruikersnaam wachtwoord combinatie invoert moet er een error message komen
+- K01.1 Wanneer de gebruiker geen geldige wachtwoord/email combinatie invoert verschijnt er een foutmelding.
+- B01.2 Als de gebruiker geen account heeft kan deze niet inloggen.
+- B01.3 Wachtwoorden moeten minimaal 7 tekens lang zijn en een hoofdletter bevatten.
+
+### FR.002 De gebruiker moet een account kunnen aanmaken.
+- B02.1 Als de gebruiker al een account heeft dan kan hij er niet nog een aanmaken met hetzelfde e mailadres.
+- B02.2 Er mogen geen dubbele e mailadressen in de database staan.
+
+### FR.003 De gebruiker moet zijn account kunnen verwijderen.
+- K03.1 Er moet visuele feedback naar de gebruiker zijn dat het account is verwijderd.
+
+### FR.004 De gebruiker moet een eigen gemaakte catagorie kunnen uploaden.
+- B04.1 De benodigde gegevens voor de catagorie moeten worden ingevoerd. Titel, beschrijving en inhoud.
+- B04.2 de catagorie moet meteen beschikbaar zijn op de website voor alle gebruikers.
+
+### FR.005 Een gebruiker moet de catagorie kunnen spelen.
+- K05.1 de gebruiker moet de catagorie in de browser of app kunnen spelen.
+
+### FR.006 Gebruikers moeten een makkelijk en overzichtelijk beeld hebben van alle categorieën.
+- K06.1 De gebruiker moet op een catagorie kunnen klikken om meer informatie te zien en ze te kunnen spelen.
+    
+
 
 ## Nonfunctional requirements

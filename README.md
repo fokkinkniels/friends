@@ -2,6 +2,8 @@
 
 Dit project heeft betrekking op mijn individueel project voor semester 3 bij de Fontys. in dir project zal al mijn documentatie, code en eventueel andere benodigheden staan voor mijn prject.
 
+Kanban bord: https://trello.com/invite/b/dpDj7pfy/ef1896bdf02df67cb05642dc4bc50549/friends
+
 # Inhoud
 
 - [Inleiding](#Inleiding)

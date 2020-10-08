@@ -6,7 +6,7 @@ Dit project heeft betrekking op mijn individueel project voor semester 3 bij de 
 # Inhoud
 
 - [Inleiding](#Inleiding)
--[Links](#Links)
+- [Links](#Links)
 - [Situaties](#situaties)
     - [Huidige situatie](#huidige-situatie)
     - [Het probleem](#het-probleem)

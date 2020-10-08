@@ -2,11 +2,11 @@
 
 Dit project heeft betrekking op mijn individueel project voor semester 3 bij de Fontys. in dir project zal al mijn documentatie, code en eventueel andere benodigheden staan voor mijn prject.
 
-Kanban bord: https://trello.com/invite/b/dpDj7pfy/ef1896bdf02df67cb05642dc4bc50549/friends
 
 # Inhoud
 
 - [Inleiding](#Inleiding)
+-[Links](#Links)
 - [Situaties](#situaties)
     - [Huidige situatie](#huidige-situatie)
     - [Het probleem](#het-probleem)
@@ -24,6 +24,11 @@ Kanban bord: https://trello.com/invite/b/dpDj7pfy/ef1896bdf02df67cb05642dc4bc505
 # Inleiding
 
 Ik heb een lange tijd zitten brainstormen over wat ik met mijn project wou gaan doen, hierbij heb ik allerlij ideeen gehad maar wou ik eigenlijk wel iets nuttigs en relevants maken waar ik na dit project ook nog iets mee kan. Toen kwam mijn idee "Friends". Friends is een applicatie voor vriendengroepen die vaak moeite hebben met beslissingen maken voor bijvoorbeeld wat ze gaan doen of wanneer, in mijn app kan iedereen individuel stemmen over vooraf bepaalde onderwerpen of hij/zij het wel of niet leuk vind, als iedereen dit gedaan heeft komt er een mooie en overzichtelijke uitslag van wat er het beste bij de groep past. Hierdoor elimineer je het probleem dat mensen het niet met elkaar eens worden over wat ze willen gan doen.
+
+# Links
+
+Kanban bord: https://trello.com/invite/b/dpDj7pfy/ef1896bdf02df67cb05642dc4bc50549/friends
+
 
 # Situaties
 

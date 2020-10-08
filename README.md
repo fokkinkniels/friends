@@ -13,6 +13,20 @@ Dit project heeft betrekking op mijn individueel project voor semester 3 bij de 
     - [Must](#must)
     - [Should](#should)
     - [Could](#could)
+- [Requirements](#Requirements)
+    - [Functional requirements](#Functional-requirements)
+        - [FR.001: De gebruiker moet in kunnen loggen](#FR.001:-De-gebruiker-moet-in-kunnen-loggen)
+        - [FR.002: De gebruiker moet een account kunnen aanmaken.](#FR.002:-De-gebruiker-moet-een-account-kunnen-aanmaken.)
+        - [FR.003: De gebruiker moet zijn account kunnen verwijderen.](#FR.003:-De-gebruiker-moet-zijn-account-kunnen-verwijderen.)
+        - [FR.004: De gebruiker moet een eigen gemaakte catagorie kunnen uploaden.](#FR.004:-De-gebruiker-moet-een-eigen-gemaakte-catagorie-kunnen-uploaden.)
+        - [FR.005: Een gebruiker moet de catagorie kunnen spelen.](#FR.005:-Een-gebruiker-moet-de-catagorie-kunnen-spelen.)
+        - [FR.006: Gebruikers moeten een makkelijk en overzichtelijk beeld hebben van alle categorieën.](#FR.006:-Gebruikers-moeten-een-makkelijk-en-overzichtelijk-beeld-hebben-van-alle-categorieën.)
+    - [Non-functional requirements](#Non-functional-requirements)
+        - [De backend wordt in spring boot gemaakt.](#De-backend-wordt-in-spring-boot-gemaakt.)
+        - [De data wordt in een MYSQL database opgeslagen.](#De-data-wordt-in-een-MYSQL-database-opgeslagen.)
+        - [De frontend moet gebruiksvriendelijk zijn.](#De-frontend-moet-gebruiksvriendelijk-zijn.)
+        - [Het systeem moet een gebruikersnaam en wachtwoord gebruiken om bij de data te kunnen komen.](#Het-systeem-moet-een-gebruikersnaam-en-wachtwoord-gebruiken-om-bij-de-data-te-kunnen-komen.)
+        - [De data moet toegankelijk zijn via een REST-API.](#De-data-moet-toegankelijk-zijn-via-een-REST-API.)
 
 <br>
 
@@ -66,6 +80,8 @@ In dit hoofdstuk staan de huidige requirements opgesteld in een MoSCoW model. De
 
 # Requirements
 
+Functional requirements gaan over wat het systeem wel en niet moet doen, de Non-functional requirements gaan over hoe het systeem het moet doen.
+
 ## Functional requirements
 
 ### FR.001: De gebruiker moet in kunnen loggen
@@ -92,7 +108,7 @@ In dit hoofdstuk staan de huidige requirements opgesteld in een MoSCoW model. De
      
 <br> 
 
-## Nonfunctional requirements
+## Non-functional requirements
 
 ### NF001: De backend wordt in spring boot gemaakt.
 ### NF002: De data wordt in een MYSQL database opgeslagen.

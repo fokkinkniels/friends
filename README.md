@@ -99,8 +99,8 @@ Functional requirements gaan over wat het systeem wel en niet moet doen, de Non-
 
 ## Non-functional requirements
 
-### NF001: De backend wordt in spring boot gemaakt.
-### NF002: De data wordt in een MYSQL database opgeslagen.
-### NF003: De frontend moet gebruiksvriendelijk zijn.
-### NF004: Het systeem moet een gebruikersnaam en wachtwoord gebruiken om bij de data te kunnen komen.
-### NF005: De data moet toegankelijk zijn via een REST-API.
+- NF001: De backend wordt in spring boot gemaakt.
+- NF002: De data wordt in een MYSQL database opgeslagen.
+- NF003: De frontend moet gebruiksvriendelijk zijn.
+- NF004: Het systeem moet een gebruikersnaam en wachtwoord gebruiken om bij de data te kunnen komen.
+- NF005: De data moet toegankelijk zijn via een REST-API.

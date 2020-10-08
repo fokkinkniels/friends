@@ -64,4 +64,11 @@ In dit hoofdstuk staan de huidige requirements opgesteld in een MoSCoW model. De
 - Gepersonaliseerde reclame
 - Met verschillende groepen een game spelen
 
+# Requirements
 
+## Functional requirements
+
+### FR.001: De gebruiker moet in kunnen loggen
+- K0.01 Wanneer de gebruiker een verkeerde gebruikersnaam wachtwoord combinatie invoert moet er een error message komen
+
+## Nonfunctional requirements

@@ -1,4 +1,4 @@
-# FRIENDS
+# FRIENDS - Meetup app voor vriendengroepen
 
 Dit project heeft betrekking op mijn individueel project voor semester 3 bij de Fontys. in dir project zal al mijn documentatie, code en eventueel andere benodigheden staan voor mijn prject.
 
@@ -74,7 +74,6 @@ In dit hoofdstuk staan de huidige requirements opgesteld in een MoSCoW model. De
 * [ ] Gepersonaliseerde reclame
 * [ ] Met verschillende groepen een game spelen
 
-<br>
 <br>
 
 # Requirements

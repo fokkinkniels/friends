@@ -53,7 +53,7 @@ In dit hoofdstuk staan de huidige requirements opgesteld in een MoSCoW model. De
 
 ## Must
 
-- [] Een website maken.
+* [ ] Een website maken.
 - Login voor personeel en gebruikers
 - Vrienden uitnodigen om zich bij een game aan te sluiten
 - Een game kunnen aanmaken als gebruiker

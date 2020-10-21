@@ -54,25 +54,25 @@ In dit hoofdstuk staan de huidige requirements opgesteld in een MoSCoW model. De
 ## Must
 
 * [ ] Een website maken.
-- Login voor personeel en gebruikers
-- Vrienden uitnodigen om zich bij een game aan te sluiten
-- Een game kunnen aanmaken als gebruiker
-- Een eigen catagory maken om te spelen,  en op te kunnen slaan en publishen
-- Een overzicht krijgen na de game
-- In een game aan kunnen geven of je een onderwerp wel of niet leuk vind
+* [ ] Login voor personeel en gebruikers
+* [ ] Vrienden uitnodigen om zich bij een game aan te sluiten
+* [ ] Een game kunnen aanmaken als gebruiker
+* [ ] Een eigen catagory maken om te spelen,  en op te kunnen slaan en publishen
+* [ ] Een overzicht krijgen na de game
+* [ ] In een game aan kunnen geven of je een onderwerp wel of niet leuk vind
 
 ## Should
 
-- Een soort datum prikker maken voor eindresultaat
-- Agendas van vrienden samen nemen en zo data aanbevelen
-- Vrienden opslaan voor snel toevoegen
-- Een functie voor anoniem stemmen
-- Het evenement aan je persoonlijke agenda toevoegen
+* [ ] Een soort datum prikker maken voor eindresultaat
+* [ ] Agendas van vrienden samen nemen en zo data aanbevelen
+* [ ] Vrienden opslaan voor snel toevoegen
+* [ ]  Een functie voor anoniem stemmen
+* [ ] Het evenement aan je persoonlijke agenda toevoegen
 
 ## Could
 
-- Gepersonaliseerde reclame
-- Met verschillende groepen een game spelen
+* [ ] Gepersonaliseerde reclame
+* [ ] Met verschillende groepen een game spelen
 
 # Requirements
 

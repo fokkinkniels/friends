@@ -74,6 +74,9 @@ In dit hoofdstuk staan de huidige requirements opgesteld in een MoSCoW model. De
 * [ ] Gepersonaliseerde reclame
 * [ ] Met verschillende groepen een game spelen
 
+<br>
+<br>
+
 # Requirements
 
 Functional requirements gaan over wat het systeem wel en niet moet doen, de Non-functional requirements gaan over hoe het systeem het moet doen.

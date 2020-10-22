@@ -1,10 +1,10 @@
 package com.friends.friendsapp.service;
 
 import com.friends.friendsapp.dao.UserDao;
+import com.friends.friendsapp.logics.GenerateId;
 import com.friends.friendsapp.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,9 +16,10 @@ public class UserService {
 
     @Autowired
     private UserDao userDao;
+    private GenerateId generateId = new GenerateId();
 
     public void addUser(User user){
-        user.setId(generateUniqueId());
+        user.setId(generateId.generateUniqueId());
         userDao.save(user);
     }
 
@@ -39,15 +40,5 @@ public class UserService {
     public void updateUser(int id, User newUser){
         newUser.setId(id);
         userDao.save(newUser);
-    }
-
-    private int generateUniqueId() {
-        UUID idOne = UUID.randomUUID();
-        UUID idTwo = UUID.randomUUID();
-        String str = String.format("%s%s", idOne, idTwo);
-        int uid=str.hashCode();
-        String filterStr=""+uid;
-        str=filterStr.replaceAll("-", "");
-        return Integer.parseInt(str);
     }
 }

@@ -17,5 +17,4 @@ public class MySqlDataSource {
                 .type(HikariDataSource.class)
                 .build();
     }
-
 }

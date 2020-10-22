@@ -61,19 +61,14 @@
             <version>5.2.9.RELEASE</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>2.3.3.RELEASE</version>
+        </dependency>
+
     </dependencies>
-
-    <repositories>
-        <repository>
-            <id>redshift</id>
-            <url>http://redshift-maven-repository.s3-website-us-east-1.amazonaws.com/release</url>
-        </repository>
-
-        <repository>
-            <id>redshift</id>
-            <url>https://s3.amazonaws.com/redshift-maven-repository/release</url>
-        </repository>
-    </repositories>
 
     <build>
         <plugins>

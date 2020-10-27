@@ -15,31 +15,40 @@ public class CategoryController {
 
     @Autowired
     private final CategoryService categoryService;
-
     public CategoryController(CategoryService categoryService) {
         this.categoryService = categoryService;
     }
 
+
+    //Create category
     @PostMapping
     public void addCategory(@NonNull @RequestBody Category category){
         categoryService.addCategory(category);
     }
 
-    @GetMapping
+
+    //Get all categories
+    @GetMapping(path = "/getall")
     public List<Category> getAllCategories(){
         return categoryService.getAllCategories();
     }
 
+
+    //Get category by id
     @GetMapping(path = "{id}")
     public Optional<Category> getCategoryById(@PathVariable("id") int id){
         return categoryService.getCategoryById(id);
     }
 
+
+    //delete category by id
     @DeleteMapping(path = "{id}")
     public void deleteCategoryById(@PathVariable("id") int id){
         categoryService.deleteCategoryById(id);
     }
 
+
+    //Update category by id
     @PutMapping(path ="{id}")
     public void updateUserById(@PathVariable("id") int id,@NonNull @RequestBody Category category){
         categoryService.updateUserById(id, category);

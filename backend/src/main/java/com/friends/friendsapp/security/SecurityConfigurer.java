@@ -2,7 +2,6 @@ package com.friends.friendsapp.security;
 
 import com.friends.friendsapp.security.filters.JwtRequestFilter;
 import com.friends.friendsapp.service.MyUserDetailsService;
-import net.bytebuddy.asm.AsmVisitorWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -15,7 +14,6 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import javax.servlet.Filter;
 
 @EnableWebSecurity
 public class SecurityConfigurer extends WebSecurityConfigurerAdapter{
@@ -34,7 +32,10 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter{
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
-                .authorizeRequests().antMatchers("/api/v1/user/authenticate").permitAll()
+                .authorizeRequests()
+                .antMatchers("/api/v1/user/authenticate").permitAll()
+                .antMatchers("/api/v1/category/getall").permitAll()
+                .antMatchers("/api/v1/user/create").permitAll()
                 .anyRequest().authenticated()
                 .and().sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS);

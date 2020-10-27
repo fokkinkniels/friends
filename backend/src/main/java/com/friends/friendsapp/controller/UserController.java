@@ -21,35 +21,34 @@ import java.util.List;
 @RestController
 public class UserController {
 
-    private final UserService userService;
-
     @Autowired
     public UserController(UserService userService) {
         this.userService = userService;
     }
-
     @Autowired
     private AuthenticationManager authenticationManager;
-
     @Autowired
     private MyUserDetailsService userDetailsService;
-
     @Autowired
     private JwtUtil jwtTokenUtil;
+    private final UserService userService;
 
 
-    @PostMapping
+    //Create user
+    @PostMapping(path = "/create")
     public void addUser(@NonNull @RequestBody User user){
         userService.addUser(user);
     }
 
 
+    //Get all users
     @GetMapping
     public List<User> getAllUsers(){
         return  userService.getAllUsers();
     }
 
 
+    //Get user by id
     @GetMapping(path = "{id}")
     public User getUserById(@PathVariable("id") int id){
         return userService.getUserById(id)
@@ -57,18 +56,21 @@ public class UserController {
     }
 
 
+    //Delete user by id
     @DeleteMapping(path = "{id}")
     public void deleteUserById(@PathVariable("id") int id){
         userService.deleteUser(id);
     }
 
 
+    //Update user by id
     @PutMapping(path = "{id}")
     public void updateUser(@PathVariable("id") int id,@NonNull @RequestBody User userToUpdate){
         userService.updateUser(id, userToUpdate);
     }
 
 
+    //Login user and get JWT token
     @RequestMapping(value = "/authenticate", method = RequestMethod.POST)
     public ResponseEntity<?> createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest) throws Exception{
 

@@ -12,6 +12,7 @@ public class User {
     private String password;
     private String email;
     private String gender;
+    private String role;
 
     public User(){
 
@@ -55,5 +56,9 @@ public class User {
 
     public String getUsername() {
         return username;
+    }
+
+    public String getRole() {
+        return role;
     }
 }

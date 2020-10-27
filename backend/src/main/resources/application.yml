@@ -5,3 +5,6 @@ app:
         password: $PnO4*AidWlr&N9EQ2xa!HzPUeQ0Neo2
         pool-size: 30
         driver-class-name : com.mysql.cj.jdbc.Driver
+
+server:
+    port: 8081

@@ -1,0 +1,10 @@
+app:
+    datasource:
+        jdbc-url: jdbc:mysql://database-1.cc3jyoatado0.eu-west-2.rds.amazonaws.com:3306/friends_DB
+        username: admin
+        password: $PnO4*AidWlr&N9EQ2xa!HzPUeQ0Neo2
+        pool-size: 30
+        driver-class-name : com.mysql.cj.jdbc.Driver
+
+server:
+    port: 8081

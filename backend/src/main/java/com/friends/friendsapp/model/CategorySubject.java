@@ -16,6 +16,12 @@ public class CategorySubject {
         this.id = UUID.randomUUID().toString();
     }
 
+    public CategorySubject(String categoryId, String subjectId) {
+        this.id = UUID.randomUUID().toString();
+        this.categoryId = categoryId;
+        this.subjectId = subjectId;
+    }
+
     public String getId() {
         return id;
     }

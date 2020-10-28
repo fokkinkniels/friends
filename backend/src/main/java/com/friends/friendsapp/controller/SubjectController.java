@@ -18,18 +18,31 @@ public class SubjectController {
     }
     private SubjectService subjectService;
 
+    //get subject by id
     @GetMapping(path = "{id}")
     public Optional<Subject> getSubject(@PathVariable("id") String id){
         return subjectService.getSubjectById(id);
     }
 
+    //get all subjects
     @GetMapping
     public List<Subject> getAllSubject(){
         return subjectService.getAllSubjects();
     }
 
+    //save a subject
     @PostMapping
     public void createSubject(@RequestBody Subject subject){
         subjectService.createSubject(subject);
+    }
+
+    @PutMapping(path = "{id}")
+    public void updateSubject(@PathVariable String id, @RequestBody Subject subject){
+        subjectService.updateSubject(id, subject);
+    }
+
+    @DeleteMapping(path = "{id}")
+    public void deleteSubjectById(@PathVariable String id){
+        subjectService.deleteSubject(id);
     }
 }

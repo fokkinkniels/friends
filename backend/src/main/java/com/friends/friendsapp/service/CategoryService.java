@@ -38,25 +38,17 @@ public class CategoryService {
     }
 
     public void deleteCategoryById(String id) {
+
+        List<CategorySubject> categorySubjects = categorySubjectDao.findAllByCategoryId(id);
+        if(!categorySubjects.isEmpty()) {
+            categorySubjectDao.deleteAll(categorySubjects);
+        }
+
         categoryDao.deleteById(id);
     }
 
     public void updateUserById(String id, Category category) {
         category.setId(id);
         categoryDao.save(category);
-    }
-
-    public List<Subject> getAllSubjects(String id){
-        List<CategorySubject> categorySubjects = new ArrayList<>();
-        List<Subject> subjects = new ArrayList<>();
-
-        categorySubjectDao.findAllByCategoryId(id).forEach(categorySubjects::add);
-
-        for (CategorySubject categorySubject:
-             categorySubjects) {
-            subjectDao.findById(categorySubject.getSubjectId()).ifPresent(subjects::add);
-        }
-
-        return subjects;
     }
 }

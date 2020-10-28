@@ -27,6 +27,7 @@ public class PastGameController {
         return pastGameService.findByUserId(userId);
     }
 
+    //save a past game
     @PostMapping
     public void addPastGame(@RequestBody PastGame pastGame){
         pastGameService.addPastGame(pastGame);

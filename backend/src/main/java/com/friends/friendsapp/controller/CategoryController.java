@@ -56,8 +56,4 @@ public class CategoryController {
         categoryService.updateUserById(id, category);
     }
 
-    @GetMapping(path = "subject/{id}")
-    public List<Subject> getSubjects(@PathVariable("id") String id){
-        return categoryService.getAllSubjects(id);
-    }
 }

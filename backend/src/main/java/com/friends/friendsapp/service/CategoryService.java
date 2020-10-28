@@ -1,7 +1,11 @@
 package com.friends.friendsapp.service;
 
 import com.friends.friendsapp.dao.CategoryDao;
+import com.friends.friendsapp.dao.CategorySubjectDao;
+import com.friends.friendsapp.dao.SubjectDao;
 import com.friends.friendsapp.model.Category;
+import com.friends.friendsapp.model.CategorySubject;
+import com.friends.friendsapp.model.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +18,10 @@ public class CategoryService {
 
     @Autowired
     private CategoryDao categoryDao;
+    @Autowired
+    private CategorySubjectDao categorySubjectDao;
+    @Autowired
+    private SubjectDao subjectDao;
 
     public void addCategory(Category category) {
         categoryDao.save(category);
@@ -30,6 +38,12 @@ public class CategoryService {
     }
 
     public void deleteCategoryById(String id) {
+
+        List<CategorySubject> categorySubjects = categorySubjectDao.findAllByCategoryId(id);
+        if(!categorySubjects.isEmpty()) {
+            categorySubjectDao.deleteAll(categorySubjects);
+        }
+
         categoryDao.deleteById(id);
     }
 

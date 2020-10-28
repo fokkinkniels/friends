@@ -50,7 +50,7 @@ public class UserController {
 
     //Get user by id
     @GetMapping(path = "{id}")
-    public User getUserById(@PathVariable("id") int id){
+    public User getUserById(@PathVariable("id") String id){
         return userService.getUserById(id)
                 .orElse(null);
     }
@@ -58,14 +58,14 @@ public class UserController {
 
     //Delete user by id
     @DeleteMapping(path = "{id}")
-    public void deleteUserById(@PathVariable("id") int id){
+    public void deleteUserById(@PathVariable("id") String id){
         userService.deleteUser(id);
     }
 
 
     //Update user by id
     @PutMapping(path = "{id}")
-    public void updateUser(@PathVariable("id") int id,@NonNull @RequestBody User userToUpdate){
+    public void updateUser(@PathVariable("id") String id,@NonNull @RequestBody User userToUpdate){
         userService.updateUser(id, userToUpdate);
     }
 

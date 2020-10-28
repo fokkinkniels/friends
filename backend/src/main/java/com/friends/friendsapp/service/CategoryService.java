@@ -1,7 +1,6 @@
 package com.friends.friendsapp.service;
 
 import com.friends.friendsapp.dao.CategoryDao;
-import com.friends.friendsapp.logics.GenerateId;
 import com.friends.friendsapp.model.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,10 +14,8 @@ public class CategoryService {
 
     @Autowired
     private CategoryDao categoryDao;
-    private GenerateId generateId = new GenerateId();
 
     public void addCategory(Category category) {
-        category.setId(generateId.generateUniqueId());
         categoryDao.save(category);
     }
 
@@ -28,15 +25,15 @@ public class CategoryService {
         return categories;
     }
 
-    public Optional<Category> getCategoryById(int id) {
+    public Optional<Category> getCategoryById(String id) {
         return categoryDao.findById(id);
     }
 
-    public void deleteCategoryById(int id) {
+    public void deleteCategoryById(String id) {
         categoryDao.deleteById(id);
     }
 
-    public void updateUserById(int id, Category category) {
+    public void updateUserById(String id, Category category) {
         category.setId(id);
         categoryDao.save(category);
     }

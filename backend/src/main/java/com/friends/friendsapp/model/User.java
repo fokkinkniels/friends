@@ -2,12 +2,13 @@ package com.friends.friendsapp.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.util.UUID;
 
 @Entity
 public class User {
 
     @Id
-    private int id;
+    private String id;
     private String username;
     private String password;
     private String email;
@@ -15,7 +16,8 @@ public class User {
     private String role;
 
     public User(){
-
+        this.id = UUID.randomUUID().toString();
+        this.role = "USER";
     }
 
     public String getPassword() {
@@ -42,7 +44,7 @@ public class User {
         this.gender = gender;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -50,7 +52,7 @@ public class User {
         this.username = username;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 

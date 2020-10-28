@@ -36,21 +36,21 @@ public class CategoryController {
 
     //Get category by id
     @GetMapping(path = "{id}")
-    public Optional<Category> getCategoryById(@PathVariable("id") int id){
+    public Optional<Category> getCategoryById(@PathVariable("id") String id){
         return categoryService.getCategoryById(id);
     }
 
 
     //delete category by id
     @DeleteMapping(path = "{id}")
-    public void deleteCategoryById(@PathVariable("id") int id){
+    public void deleteCategoryById(@PathVariable("id") String id){
         categoryService.deleteCategoryById(id);
     }
 
 
     //Update category by id
     @PutMapping(path ="{id}")
-    public void updateUserById(@PathVariable("id") int id,@NonNull @RequestBody Category category){
+    public void updateUserById(@PathVariable("id") String id,@NonNull @RequestBody Category category){
         categoryService.updateUserById(id, category);
     }
 }

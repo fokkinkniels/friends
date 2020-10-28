@@ -1,11 +1,13 @@
 package com.friends.friendsapp.controller;
 
 import com.friends.friendsapp.model.Category;
+import com.friends.friendsapp.model.Subject;
 import com.friends.friendsapp.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.*;
 
+import java.nio.file.Path;
 import java.util.List;
 import java.util.Optional;
 
@@ -52,5 +54,10 @@ public class CategoryController {
     @PutMapping(path ="{id}")
     public void updateUserById(@PathVariable("id") String id,@NonNull @RequestBody Category category){
         categoryService.updateUserById(id, category);
+    }
+
+    @GetMapping(path = "subject/{id}")
+    public List<Subject> getSubjects(@PathVariable("id") String id){
+        return categoryService.getAllSubjects(id);
     }
 }

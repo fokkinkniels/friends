@@ -1,7 +1,11 @@
 package com.friends.friendsapp.service;
 
 import com.friends.friendsapp.dao.CategoryDao;
+import com.friends.friendsapp.dao.CategorySubjectDao;
+import com.friends.friendsapp.dao.SubjectDao;
 import com.friends.friendsapp.model.Category;
+import com.friends.friendsapp.model.CategorySubject;
+import com.friends.friendsapp.model.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +18,10 @@ public class CategoryService {
 
     @Autowired
     private CategoryDao categoryDao;
+    @Autowired
+    private CategorySubjectDao categorySubjectDao;
+    @Autowired
+    private SubjectDao subjectDao;
 
     public void addCategory(Category category) {
         categoryDao.save(category);
@@ -36,5 +44,19 @@ public class CategoryService {
     public void updateUserById(String id, Category category) {
         category.setId(id);
         categoryDao.save(category);
+    }
+
+    public List<Subject> getAllSubjects(String id){
+        List<CategorySubject> categorySubjects = new ArrayList<>();
+        List<Subject> subjects = new ArrayList<>();
+
+        categorySubjectDao.findAllByCategoryId(id).forEach(categorySubjects::add);
+
+        for (CategorySubject categorySubject:
+             categorySubjects) {
+            subjectDao.findById(categorySubject.getSubjectId()).ifPresent(subjects::add);
+        }
+
+        return subjects;
     }
 }

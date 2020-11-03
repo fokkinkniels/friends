@@ -71,8 +71,8 @@ public class UserController {
 
 
     //Login user and get JWT token
-    @RequestMapping(value = "/authenticate", method = RequestMethod.POST)
-    public ResponseEntity<?> createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest) throws Exception{
+    @RequestMapping(value = "/auth", method = RequestMethod.POST)
+    public ResponseEntity<?> createAuthenticationToken(@org.jetbrains.annotations.NotNull @RequestBody AuthenticationRequest authenticationRequest) throws Exception{
 
         try {
             authenticationManager.authenticate(

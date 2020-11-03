@@ -15,7 +15,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
-import org.springframework.web.cors.reactive.CorsConfigurationSource;
 
 import java.util.Arrays;
 
@@ -39,7 +38,7 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter{
         http.csrf().disable()
                 .cors().configurationSource(corsConfigurationSource()).and()
                 .authorizeRequests()
-                .antMatchers("/api/v1/user/authenticate").permitAll()
+                .antMatchers("/api/v1/user/auth").permitAll()
                 .antMatchers("/api/v1/category/getall").permitAll()
                 .antMatchers("/api/v1/user/create").permitAll()
                 .anyRequest().authenticated()

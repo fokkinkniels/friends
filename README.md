@@ -18,6 +18,11 @@ Dit project heeft betrekking op mijn individueel project voor semester 3 bij de 
 - [Requirements](#Requirements)
     - [Functional requirements](#Functional-requirements)
     - [Non-functional requirements](#Non-functional-requirements)
+- [C4 Model](#c4-model)
+    - [C4 Level 1](#level-1)
+    - [C4 Level 2](#level-2)
+    - [C4 Level 3](#level-3)
+
  
 <br>
 
@@ -113,3 +118,15 @@ Functional requirements gaan over wat het systeem wel en niet moet doen, de Non-
 - NF003: De frontend moet gebruiksvriendelijk zijn.
 - NF004: Het systeem moet een gebruikersnaam en wachtwoord gebruiken om bij de data te kunnen komen.
 - NF005: De data moet toegankelijk zijn via een REST-API.
+
+<br>
+
+# C4 Model
+In dit hoofdstuk staan level 1-3 van het C4 model. Het C4 model is een "abstraction-first" manier voor het maken van software architecture diagrammen. Voor het maken van deze 3 diagrammen heb ik [deze video](https://www.youtube.com/watch?v=x2-rSnhpw0g) bekeken. Meer informatie over het C4 model is te vinden op [c4model.com](https://c4model.com/).
+
+## Level 1
+(Coming Soon)
+## Level 2
+(Coming Soon)
+## Level 3
+(Coming Soon)

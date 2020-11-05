@@ -127,6 +127,6 @@ In dit hoofdstuk staan level 1-3 van het C4 model. Het C4 model is een "abstract
 ## Level 1
 ![C4 Lvl One](https://github.com/fokkinkniels/friends/blob/master/Documentation/C4-Lvl_1.jpg?raw=true)
 ## Level 2
-(Coming Soon)
+![C4 Lvl Two](https://github.com/fokkinkniels/friends/blob/master/Documentation/C4-Lvl_2.jpg?raw=true)
 ## Level 3
 (Coming Soon)

@@ -125,7 +125,7 @@ Functional requirements gaan over wat het systeem wel en niet moet doen, de Non-
 In dit hoofdstuk staan level 1-3 van het C4 model. Het C4 model is een "abstraction-first" manier voor het maken van software architecture diagrammen. Voor het maken van deze 3 diagrammen heb ik [deze video](https://www.youtube.com/watch?v=x2-rSnhpw0g) bekeken. Meer informatie over het C4 model is te vinden op [c4model.com](https://c4model.com/).
 
 ## Level 1
-(Coming Soon)
+![C4 Lvl One](https://github.com/fokkinkniels/friends/blob/master/Documentation/C4-Lvl_1.jpg?raw=true)
 ## Level 2
 (Coming Soon)
 ## Level 3
